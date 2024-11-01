@@ -1,0 +1,6 @@
+<h1>Data from parent component</h1>
+<div *ngFor="let user of parentUsers">
+    <p>{{ user.firstName }} {{ user.lastName }} - {{ user.email }} - {{ user.phoneNumber }} - {{ user.dateOfBirth }}</p>
+</div>
+
+<button (click)="displayUsers()" class="btn btn-primary">Display users in console.</button>
